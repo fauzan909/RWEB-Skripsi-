@@ -1,18 +1,22 @@
-# Aplikasi Ujian Online (CAT)
-Link postingan blog : 
-http://nur-akhwan.blogspot.co.id/2015/09/download-aplikasi-ujian-online-dengan.html
+sijaki
+======
 
-#Deskripsi
-Aplikasi Ujian Online, adalah aplikasi yang digunakan untuk melakukan proses ujian , tanpa menggunakan kertas (paperless) , atau sekarang ngetren dengan nama Computer Based Test (CBT), atau Computer Assisted Test (CAT). Semua proses ujian dilakukan melalui komputer, mulai dari pembuatan soal, pengaturan kelas, pengaturan user yang bisa ikut ujian, pengaturan guru mengajar, sampai proses ujian, dengan memanfaatkan teknologi rekayasa web. Tipe soal yang bisa masuk ke aplikasi ujian online di pembahasan ini adalah tipe soal pilihan ganda. 
+Sistem Informasi Penjadwalan Kuliah
 
-#Pemrograman :
-1. PHP dengan framework : Codeigniter versi  2.x.x (ane lupa versinya, yang jelas versi 2)
-2. Javascript jQuery, untuk menghandel perintah-perintah javascript, dan lainya.
-3. format data JSON untuk pertukaran data antara server dgn client, pada menu-menu yang ber-AJAX
-4. Design UI dengan framework CSS, Twitter Bootstrap
+SIJAKI is an abbreviation for "Sistem Informasi Penjadwalan Kuliah". It is an Indonesian terms for College Schedule Information System. The project involves 3 members. My duty was to develop it using codeigniter and bootstrap according to given object-oriented design.
 
-#Level user : 
-1. Admin, merupakan level tertinggi dari aplikasi, bisa memanej data : guru/dosen,  siswa, mata pelajaran, soal, lihat hasil ujian
-2. Guru, mempunyai akses, bisa memanage data : soal, daftar ujian, dan melihat hasil ujian
-3. Siswa, mempunya akses, bisa mengikuti ujian, sesuai dengan mata pelajaran yang ia ikuti, yang diatur oleh  level admin, dan melihat hasil ujian.
+The Information System has 3 user interface. Those are for teacher, student, and administrator.
 
+Here is an example of administrator UI.
+![](https://raw.githubusercontent.com/donirn/sijaki/master/Screenshots/Administrator.png)
+
+Configuration steps:
+
+1. Move the files in source folder to a folder in web server directory (e.g. htdocs)
+2. Edit database configuration in source/application/config/database.php
+3. Import sijaki.sql to your sql server
+
+Here is a default username and password for each users:
+- Administrator, Username : admin, Password : Admin
+- Student, Username : 113102170, Password : 1234
+- Teacher, Username : DWM, Password : 1234
